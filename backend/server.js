@@ -25,12 +25,12 @@ const __dirname1 = path.resolve();
 
 if (process.env.NODE_ENV === 'production') {
   const staticPath = path.join(__dirname1, 'frontend', 'dist');
-  console.log('Static Path:', staticPath); // Log the static path
+  console.log('Static Path:', staticPath); 
   app.use(express.static(staticPath));
 
   app.get('*', (req, res) => {
-    const indexPath = path.resolve(__dirname1, 'frontend', 'dist', 'index.html');
-    console.log('Index Path:', indexPath); // Log the index.html path
+    const indexPath = path.resolve(__dirname1, './frontend', 'dist', 'index.html');
+    console.log('Index Path:', indexPath); 
     res.sendFile(indexPath);
   });
 }
