@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node backend/server.js",
      "server": "nodemon backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "npm install --legacy-peer-deps --force && npm install --legacy-peer-deps --force --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Sourav Sharma",
   "license": "ISC",
