@@ -7,7 +7,6 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
-
   },
   "author": "Sourav Sharma",
   "license": "ISC",
@@ -28,5 +27,8 @@
     "react-router-dom": "^6.18.0",
     "socket.io": "^4.7.2",
     "socket.io-client": "^4.7.2"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0"
   }
 }
