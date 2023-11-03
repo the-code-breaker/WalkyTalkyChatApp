@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node backend/server.js",
      "server": "nodemon backend/server.js",
-      "build" : "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Sourav Sharma",
   "license": "ISC",
