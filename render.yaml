@@ -1,0 +1,4 @@
+services:
+  - name: your-service-name
+    type: web
+    buildCommand: npm install && npm run build
