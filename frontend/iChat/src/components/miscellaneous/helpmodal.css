@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.contact-box1 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-area>h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    position: relative;
+    top: 2rem;
+    color: White;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contact-area>p {
+    font-size: 25px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.contact-area>h1>span {
+    color: blue;
+}
+
+.contact-area>p>span {
+    color: blue;
+}
+
+.contact-inner-box1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    height: 100%;
+    color: aliceblue;
+}
+
+
+.contact-form {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contact-form>h1 {
+    font-size: 30px;
+    color: black;
+}
+
+.contact-form>h1>span {
+    color: blue;
+}
+
+.contact-form>form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    max-width: 100%;
+    color: aliceblue;
+}
+
+.contact-form>form>label {
+    padding-top: 1rem;
+    padding-left: 0.4rem;
+    font-size: 20px;
+    color: blue;
+    padding-bottom: 0.1rem;
+}
+
+.contact-form>form>input {
+    padding: 0.8rem;
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid rgb(212, 235, 236);
+    background-color: rgb(212, 235, 236);
+    border-radius: 5px;
+    color: black;
+    outline: none;
+
+}
+
+.contact-form>form>input::placeholder {
+    color: rgb(119, 132, 144);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form>form>input:focus {
+    border: 2px solid blue;
+}
+
+.contact-form>form>textarea {
+    margin-top: 0.2rem;
+    padding: 1rem;
+    resize: none;
+    border: 2px solid rgb(212, 235, 236);
+    background-color: rgb(212, 235, 236);
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    color: rgb(19, 20, 21);
+
+}
+
+.contact-form>form>textarea::placeholder {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(119, 132, 144);
+
+}
+
+.contact-form>form>textarea:focus {
+    border: 2px solid blue;
+
+}
+
+.contact-form>form>p {
+    margin-top: 1rem;
+    font-size: 20px;
+    padding-left: 0.8rem;
+    border: none;
+    outline: none;
+
+}
+
+.contact-form>form>p {
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    color: blue;
+
+}
+
+.contact-form>form>button {
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    font-size: 20px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.contact-form>form>button:hover {
+    cursor: pointer;
+    background-color: blue;
+    transition: 0.2;
+    color: white;
+}
+
+.contact-inner-box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+}
+
+.contact-inner-box2 img {
+    width: inherit;
+    width: 100%;
+    max-width: 800px;
+}
+
+@media screen and (max-width: 1270px) {
+    .contact-form {
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .contact-inner-box2 {
+        display: none;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+        margin-top: 1rem;
+    }
+
+    .contact-area>h1 {
+        width: 100%;
+        z-index: -1;
+        text-align: center;
+        font-size: 40px;
+        position: relative;
+        top: 5rem;
+        color: White;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .contact-area>p {
+        font-size: 20px;
+        margin-top: 5rem;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .contact-inner-box2 {
+        display: none;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 3rem;
+    }
+
+}
