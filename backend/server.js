@@ -22,11 +22,19 @@ app.use('/api/message', messageRoutes);
 
 // ---------------deployment-----------------//
 const __dirname1 = path.resolve();
-if(process.env.NODE_ENV === 'production'){
- app.use(express.static(path.join(__dirname1, "/frontend/dist")))
- app.get('*', (req, res)=>{
-  res.sendFile(path.resolve(__dirname1, "frontend", "dist", "index.html"));
- });
+
+if (process.env.NODE_ENV === 'production') {
+  const staticPath = path.join(__dirname1, 'frontend', 'dist');
+  console.log('Static Path:', staticPath); // Log the static path
+  app.use(express.static(staticPath));
+
+  app.get('*', (req, res) => {
+    const indexPath = path.resolve(__dirname1, 'frontend', 'dist', 'index.html');
+    console.log('Index Path:', indexPath); // Log the index.html path
+    res.sendFile(indexPath);
+  });
+}
+
 
 }
 else{
