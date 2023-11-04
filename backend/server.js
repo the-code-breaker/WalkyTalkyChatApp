@@ -24,7 +24,7 @@ app.use('/api/message', messageRoutes);
 const __dirname1 = path.resolve();
 
 if (process.env.NODE_ENV === 'production') {
-  const staticPath = path.join(__dirname1, 'frontend', 'dis');
+  const staticPath = path.join(__dirname1, 'frontend', 'dist');
   console.log('Static Path:', staticPath); 
   app.use(express.static(staticPath));
 

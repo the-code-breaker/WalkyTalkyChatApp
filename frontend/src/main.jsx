@@ -8,14 +8,14 @@ import ErrorBoundary from "./components/ErrorBoundary.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-      <BrowserRouter>
+    <BrowserRouter>
       <ErrorBoundary>
-    <ChatProvider>
-        <ChakraProvider>
-          <App />
-        </ChakraProvider>
-    </ChatProvider>
+        <ChatProvider>
+          <ChakraProvider>
+            <App />
+          </ChakraProvider>
+        </ChatProvider>
       </ErrorBoundary>
-      </BrowserRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
