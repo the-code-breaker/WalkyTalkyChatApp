@@ -61,7 +61,6 @@ const HomePage = () => {
             fontSize="4xl"
             color="tomato"
             fontFamily="wan sans"
-            // textAlign={"center"}
             display="flex"
             flexDirection="column"
             alignItems="center"

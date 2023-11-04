@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 .App{
-    background-image: url("./assets/bg.jpg");
+    background-image: url("./assets/bg1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
