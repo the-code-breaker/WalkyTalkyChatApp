@@ -24,12 +24,12 @@ app.use('/api/message', messageRoutes);
 const __dirname1 = path.resolve();
 
 if (process.env.NODE_ENV === 'production') {
-  const staticPath = path.join(__dirname1, 'frontend', 'dist');
+  const staticPath = path.join(__dirname1, 'frontend', 'dis');
   console.log('Static Path:', staticPath); 
   app.use(express.static(staticPath));
 
   app.get('*', (req, res) => {
-    const indexPath = path.resolve(__dirname1, './frontend', 'dist', 'index.html');
+    const indexPath = path.resolve(__dirname1, 'frontend', 'dist', 'index.html');
     console.log('Index Path:', indexPath); 
     res.sendFile(indexPath);
   });
