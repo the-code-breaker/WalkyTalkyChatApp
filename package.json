@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "build": "npm install --force && npm run build --legacy-peer-deps --prefix frontend && npm run --prefix frontend build",
+    "build": "npm install --force && npm run build --legacy-peer-deps --prefix frontend && npm run build",
     "build-frontend": "cd frontend && npm install --force && npm run build --legacy-peer-deps",
     "build-root": "npm run build-frontend"
   },
