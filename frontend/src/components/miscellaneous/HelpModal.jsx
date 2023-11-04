@@ -89,7 +89,7 @@ import "./helpmodal.css"
                       <div className="contact-form">
                         <h1 type="submit" id="sub" style={{ display: "none" }}>
                           {" "}
-                          Your message has been sent successfully...{" "}
+                          Your request has been submitted successfully...{" "}
                           <i class="fa-solid fa-check"></i>
                         </h1>
                         <form
@@ -98,7 +98,9 @@ import "./helpmodal.css"
                           id="formid"
                           onSubmit={handleSubmit}
                         >
-                           <p style={{all:"unset", color:"black"}}>You will get response within 2hours...</p>
+                          <p style={{ all: "unset", color: "black" }}>
+                            You will get response within 2hours...
+                          </p>
                           <label htmlFor="name">
                             Your name <sperscript>*</sperscript>
                           </label>
@@ -121,7 +123,8 @@ import "./helpmodal.css"
                             placeholder="Enter email"
                             required
                           />
-                          <p>Your Issue <sperscript>*</sperscript>
+                          <p>
+                            Your Issue <sperscript>*</sperscript>
                           </p>
                           <textarea
                             cols="10"
