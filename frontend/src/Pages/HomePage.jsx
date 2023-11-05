@@ -49,26 +49,21 @@ const HomePage = () => {
           justifyContent="space-around"
           width="100%"
         >
-          <Box
-            boxSize="100px"
-            objectFit="cover"
-            src="https://bit.ly/dan-abramov"
-            alt="Dan Abramov"
-          >
-            <Image src={logo} alt="Dan Abramov" />
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <Image src={logo} alt="Dan Abramov" width="4rem"/>
           </Box>
           <Text
             fontSize="4xl"
             color="tomato"
-            fontFamily="wan sans"
             display="flex"
             flexDirection="column"
             alignItems="center"
             justifyContent="center"
-            
           >
             Welcome to Walky Talky
-            <Text fontSize="sm" color="grey">Never disconnecting from your world.</Text>
+            <Text fontSize="sm" color="grey">
+              Never disconnecting from your world.
+            </Text>
           </Text>
         </Box>
       </Box>
