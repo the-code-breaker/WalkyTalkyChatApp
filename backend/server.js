@@ -52,7 +52,7 @@ else{
 //     res.send(singleChat);
 // })
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8005;
 
 const server = app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
@@ -63,8 +63,6 @@ const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
     origin: "https://walkytalky-r0fb.onrender.com/",
-    methods: ["GET", "POST"],
-    credentials: true,
   },
 });
 
