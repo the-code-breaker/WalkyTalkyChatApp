@@ -16,7 +16,7 @@ import ProfileModel from "./miscellaneous/ProfileModel";
 import GroupChatModal from "./miscellaneous/GroupChatModal";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModel";
 import ScrollableChat from "./ScrollableChat";
-import  io  from "socket.io-client";
+import  {io} from "socket.io-client";
 const ENDPOINT = "https://walkytalky-r0fb.onrender.com/";
 var socket;
 var selectedChatCompare;
