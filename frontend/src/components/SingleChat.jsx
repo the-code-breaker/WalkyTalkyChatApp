@@ -17,7 +17,7 @@ import GroupChatModal from "./miscellaneous/GroupChatModal";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModel";
 import ScrollableChat from "./ScrollableChat";
 import  io  from "socket.io-client";
-const ENDPOINT = "https://walkytalky-r0fb.onrender.com/";
+const ENDPOINT = "https://walkytalky-r0fb.onrender.com:8080";
 var socket;
 var selectedChatCompare;
 import "./style.css";
